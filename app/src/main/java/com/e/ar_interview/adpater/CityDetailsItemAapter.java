@@ -48,7 +48,6 @@ public class CityDetailsItemAapter extends RecyclerView.Adapter<CityDetailsItemA
                     .load(city.getImageHref())
                     .into(holder.imageView);
 
-
         } else {
             cityDetailList.remove(holder.getAdapterPosition());
 
