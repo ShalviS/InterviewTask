@@ -12,4 +12,5 @@ public interface ApiCall {
  //Api for getting city details
     @GET("facts.json")
     Call<CityData> getCityDetails();
+
 }
