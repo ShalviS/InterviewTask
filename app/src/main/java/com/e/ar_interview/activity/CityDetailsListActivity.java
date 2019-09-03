@@ -26,6 +26,7 @@ public class CityDetailsListActivity extends AppCompatActivity {
     CityDetailsViewModel model;
     SwipeRefreshLayout swipeRefreshLayout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +36,6 @@ public class CityDetailsListActivity extends AppCompatActivity {
         model = ViewModelProviders.of(this).get(CityDetailsViewModel.class);
         mDecelaration();
         getRcyclerData();
-
     }
 
 
@@ -56,7 +56,7 @@ public class CityDetailsListActivity extends AppCompatActivity {
 
     }
 
-    //define method for observer
+    //Define a data for observer
     public void getRcyclerData(){
 
         model.getCityDetails().observe(this, new Observer<CityData>() {
