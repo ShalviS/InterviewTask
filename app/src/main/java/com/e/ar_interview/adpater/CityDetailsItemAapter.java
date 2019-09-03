@@ -40,7 +40,10 @@ public class CityDetailsItemAapter extends RecyclerView.Adapter<CityDetailsItemA
     public void onBindViewHolder(@NonNull CityViewHolder holder, int position) {
         CityDetailsItem city = cityDetailList.get(holder.getAdapterPosition());
         if (city.getTitle() != null || city.getDescription() != null || city.getImageHref() != null) {
-            holder.txtDescription.setText("Description : "+city.getDescription());
+
+                holder.txtDescription.setText(city.getDescription());
+
+
             holder.txtTitle.setText(city.getTitle());
 
             Glide.with(mCtx)
